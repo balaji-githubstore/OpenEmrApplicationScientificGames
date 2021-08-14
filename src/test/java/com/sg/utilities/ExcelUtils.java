@@ -10,8 +10,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
-
-	public static Object[][] getSheetToObjectArray(String fileDetail, String sheetName) throws IOException {
+	
+		public static Object[][] getSheetToObjectArray(String fileDetail, String sheetName) throws IOException {
 		FileInputStream file = new FileInputStream(fileDetail); // location
 
 		XSSFWorkbook book = new XSSFWorkbook(file); // open
@@ -32,8 +32,7 @@ public class ExcelUtils {
 				main[r - 1][c] = format.formatCellValue(cell);
 			}
 		}
-
 		return main;
 	}
-
+		
 }
