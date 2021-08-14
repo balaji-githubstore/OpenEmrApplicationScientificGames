@@ -28,7 +28,7 @@ public class LoginTest extends WebDriverWrapper {
 	@Test
 	public void invalidCredentialTest()
 	{
-		driver.findElement(By.id("authUser")).sendKeys("admin123");
+		driver.findElement(By.id("authUser")).sendKeys("admin12345");
 		driver.findElement(By.id("clearPass")).sendKeys("pass");
 		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
 		selectLang.selectByVisibleText("English (Indian)");
