@@ -8,12 +8,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sg.base.WebDriverWrapper;
+import com.sg.pages.LoginPage;
 
 public class LoginTest extends WebDriverWrapper {
 	@Test
 	public void validCredentialTest() {
-		driver.findElement(By.id("authUser")).sendKeys("admin");
-		driver.findElement(By.id("clearPass")).sendKeys("pass");
+
+		LoginPage.enterUsername(driver, "admin");
+		LoginPage.enterPassword(driver, "pass");
 		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
 		selectLang.selectByVisibleText("English (Indian)");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
