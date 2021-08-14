@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-14T14:24:38 IST" name="Default suite" finished-at="2021-08-14T14:24:38 IST" duration-ms="48">
+  <suite started-at="2021-08-14T14:31:06 IST" name="Default suite" finished-at="2021-08-14T14:31:06 IST" duration-ms="49">
     <groups>
     </groups>
-    <test started-at="2021-08-14T14:24:38 IST" name="Default test" finished-at="2021-08-14T14:24:38 IST" duration-ms="48">
+    <test started-at="2021-08-14T14:31:06 IST" name="Default test" finished-at="2021-08-14T14:31:06 IST" duration-ms="49">
       <class name="com.sg.test.LoginTest">
-        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sg.test.LoginTest@1a4013]" started-at="2021-08-14T14:24:38 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2021-08-14T14:24:38 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
+        <test-method signature="invalidCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sg.test.LoginTest@1a4013]" started-at="2021-08-14T14:31:06 IST" name="invalidCredentialTest" finished-at="2021-08-14T14:31:06 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3]]>
+              <![CDATA[
+Cannot inject @Test annotated Method [invalidCredentialTest] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [invalidCredentialTest] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
 at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
 at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
 at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
@@ -40,22 +45,12 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at com.sg.utilities.DataProviderUtils.validCredentialData(DataProviderUtils.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validCredentialTest -->
+        </test-method> <!-- invalidCredentialTest -->
       </class> <!-- com.sg.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -19,19 +19,41 @@ public class ExcelTest {
 
 		XSSFSheet sheet = book.getSheet("invalidCredentialTest"); // sheet
 
-		XSSFRow row = sheet.getRow(0); // row
-
-		XSSFCell cell = row.getCell(0); // cell
+		int rowCount=sheet.getPhysicalNumberOfRows();
+		System.out.println(rowCount);
 		
-		DataFormatter format=new DataFormatter();
-		String cellValue = format.formatCellValue(cell);
+		int cellCount=sheet.getRow(1).getPhysicalNumberOfCells();
+		System.out.println(cellCount);
 		
-		System.out.println(cellValue);
+		Object[][] main=new Object[rowCount-1][cellCount];
 		
+		for(int r=1;r<rowCount;r++)
+		{
+			for(int c=0;c<cellCount;c++)
+			{
+				XSSFRow row = sheet.getRow(r); 
+				XSSFCell cell = row.getCell(c);
+				
+				DataFormatter format=new DataFormatter();
+				String cellValue = format.formatCellValue(cell);
+				System.out.println(cellValue);
+				main[r-1][c]=cellValue;
+				
+			}
+			System.out.println("------------------");
+		}
+		
+		System.out.println(main);
 
 	}
 
 }
+
+
+
+
+
+
 
 
 
