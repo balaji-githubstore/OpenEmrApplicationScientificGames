@@ -26,15 +26,15 @@ public class LoginTest extends WebDriverWrapper {
 	}
 	
 	@Test
-	public void invalidCredentialTest()
+	public void invalidCredentialTest(String username,String password,String language,String expectedValue)
 	{
 		LoginPage login=new LoginPage(driver);
-		login.enterUsername("admin123");
-		login.enterPassword("pass");
-		login.selectLanguageByText("English (Indian)");
+		login.enterUsername(username);
+		login.enterPassword(password);
+		login.selectLanguageByText(language);
 		login.clickOnLogin();
 		
-		Assert.assertEquals(login.getInvalidLoginErrorMessage(), "Invalid username or password");
+		Assert.assertEquals(login.getInvalidLoginErrorMessage(), expectedValue);
 	}
 }
 
