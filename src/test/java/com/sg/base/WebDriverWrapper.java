@@ -8,19 +8,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class WebDriverWrapper {
 	protected WebDriver driver;
 
 	@BeforeMethod
-	public void setUp() {
+	@Parameters({"browser"})
+	public void setUp(@Optional("ch") String browserName) {
 		
-		String browser="ch";
-		
-		if (browser.equalsIgnoreCase("ie")) {
+		if (browserName.equalsIgnoreCase("ie")) {
 			// set property
 			driver = new InternetExplorerDriver();
-		} else if (browser.equalsIgnoreCase("ff")) {
+		} else if (browserName.equalsIgnoreCase("ff")) {
 
 			System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver.exe");
 			driver = new FirefoxDriver();
