@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 	
-		public static Object[][] getSheetToObjectArray(String fileDetail, String sheetName) throws IOException {
+public static Object[][] getSheetToObjectArray(String fileDetail, String sheetName) throws IOException {
 		FileInputStream file = new FileInputStream(fileDetail); // location
 
 		XSSFWorkbook book = new XSSFWorkbook(file); // open

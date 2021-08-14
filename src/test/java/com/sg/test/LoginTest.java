@@ -25,7 +25,7 @@ public class LoginTest extends WebDriverWrapper {
 		Assert.assertEquals(dashboard.getCurrentTitle(), expectedValue);
 	}
 	
-	@Test
+	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "invalidCredentialData")
 	public void invalidCredentialTest(String username,String password,String language,String expectedValue)
 	{
 		LoginPage login=new LoginPage(driver);
