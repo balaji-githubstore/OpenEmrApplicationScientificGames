@@ -1,13 +1,11 @@
 package com.sg.test;
 	
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.sg.base.WebDriverWrapper;
 import com.sg.pages.LoginPage;
 
-public class PatientTest extends WebDriverWrapper {
+public class PatientTest extends WebDriverWrapper {	
 
 	@Test
 	public void addPatientTest()
