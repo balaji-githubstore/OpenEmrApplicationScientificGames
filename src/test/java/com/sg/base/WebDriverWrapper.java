@@ -15,7 +15,7 @@ public class WebDriverWrapper {
 	@BeforeMethod
 	public void setUp() {
 		
-		String browser="ff";
+		String browser="ch";
 		
 		if (browser.equalsIgnoreCase("ie")) {
 			// set property

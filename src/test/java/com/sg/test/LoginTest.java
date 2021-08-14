@@ -11,14 +11,15 @@ import com.sg.base.WebDriverWrapper;
 import com.sg.pages.LoginPage;
 
 public class LoginTest extends WebDriverWrapper {
+	
 	@Test
 	public void validCredentialTest() {
 
-		LoginPage.enterUsername(driver, "admin");
-		LoginPage.enterPassword(driver, "pass");
-		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
-		selectLang.selectByVisibleText("English (Indian)");
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		LoginPage login=new LoginPage(driver);
+		login.enterUsername("admin");
+		login.enterPassword("pass");
+		login.selectLanguageByText("English (Indian)");
+		login.clickOnLogin();
 
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()='Flow Board']")));
