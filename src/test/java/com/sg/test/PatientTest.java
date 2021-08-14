@@ -5,17 +5,18 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.sg.base.WebDriverWrapper;
+import com.sg.pages.LoginPage;
 
 public class PatientTest extends WebDriverWrapper {
 
 	@Test
 	public void addPatientTest()
 	{
-		driver.findElement(By.id("authUser")).sendKeys("admin");
-		driver.findElement(By.id("clearPass")).sendKeys("pass");
-		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
-		selectLang.selectByVisibleText("English (Indian)");
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		LoginPage login=new LoginPage(driver);
+		login.enterUsername("admin");
+		login.enterPassword("pass");
+		login.selectLanguageByText("English (Indian)");
+		login.clickOnLogin();
 		
 		//firstname - john 
 		//lastname - paul
