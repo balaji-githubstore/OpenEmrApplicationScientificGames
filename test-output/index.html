@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OpenEMR_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">OpenEMR Suite</span>
+              <span class="suite-name border-failed">OpenEMR Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-OpenEMR_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,46 +93,85 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,  6 skipped,  </span>
+                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-OpenEMR_Suite" class="hide-methods skipped suite-OpenEMR_Suite"> (hide)</a> <!-- hide-methods skipped suite-OpenEMR_Suite -->
-                      <a href="#" panel-name="suite-OpenEMR_Suite" class="show-methods skipped suite-OpenEMR_Suite"> (show)</a> <!-- show-methods skipped suite-OpenEMR_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OpenEMR_Suite" class="hide-methods failed suite-OpenEMR_Suite"> (hide)</a> <!-- hide-methods failed suite-OpenEMR_Suite -->
+                      <a href="#" panel-name="suite-OpenEMR_Suite" class="show-methods failed suite-OpenEMR_Suite"> (show)</a> <!-- show-methods failed suite-OpenEMR_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-OpenEMR_Suite">
+                    <div class="method-list-content failed suite-OpenEMR_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">invalidCredentialTest(john, john123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(admin, pass, English (Indian), OpenEMR)">validCredentialTest(admin, pass, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(accountant, accountant, English (Indian), OpenEMR)">validCredentialTest(accountant, accountant, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(physician, physician, English (Indian), OpenEMR)">validCredentialTest(physician, physician, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(admin, pass, English (Indian), OpenEMR)">validCredentialTest(admin, pass, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(accountant, accountant, English (Indian), OpenEMR)">validCredentialTest(accountant, accountant, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-OpenEMR_Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(physician, physician, English (Indian), OpenEMR)">validCredentialTest(physician, physician, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OpenEMR_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-OpenEMR_Suite" class="hide-methods passed suite-OpenEMR_Suite"> (hide)</a> <!-- hide-methods passed suite-OpenEMR_Suite -->
+                      <a href="#" panel-name="suite-OpenEMR_Suite" class="show-methods passed suite-OpenEMR_Suite"> (show)</a> <!-- show-methods passed suite-OpenEMR_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-OpenEMR_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">invalidCredentialTest(john, john123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenEMR_Suite" title="com.sg.test.LoginTest" class="method navigator-link" hash-for-method="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">invalidCredentialTest(john, john123, Dutch, Invalid username or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-OpenEMR_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,144 +183,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OpenEMR_Suite" class="panel OpenEMR_Suite">
-          <div class="suite-OpenEMR_Suite-class-skipped">
+          <div class="suite-OpenEMR_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.sg.test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">
-                  </a> <!-- invalidCredentialTest(bala, bala123, Dutch, Invalid username or password) -->
-                  <span class="method-name">invalidCredentialTest</span>
-                  <span class="parameters">(bala, bala123, Dutch, Invalid username or password)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">
-                  </a> <!-- invalidCredentialTest(john, john123, Dutch, Invalid username or password) -->
-                  <span class="method-name">invalidCredentialTest</span>
-                  <span class="parameters">(john, john123, Dutch, Invalid username or password)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">
-                  </a> <!-- invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password) -->
-                  <span class="method-name">invalidCredentialTest</span>
-                  <span class="parameters">(admin123, bala, English (Indian), Invalid username or password)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validCredentialTest(admin, pass, English (Indian), OpenEMR)">
                   </a> <!-- validCredentialTest(admin, pass, English (Indian), OpenEMR) -->
                   <span class="method-name">validCredentialTest</span>
                   <span class="parameters">(admin, pass, English (Indian), OpenEMR)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validCredentialTest(physician, physician, English (Indian), OpenEMR)">
-                  </a> <!-- validCredentialTest(physician, physician, English (Indian), OpenEMR) -->
-                  <span class="method-name">validCredentialTest</span>
-                  <span class="parameters">(physician, physician, English (Indian), OpenEMR)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -291,29 +208,123 @@ Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
                   </a> <!-- validCredentialTest(accountant, accountant, English (Indian), OpenEMR) -->
                   <span class="method-name">validCredentialTest</span>
                   <span class="parameters">(accountant, accountant, English (Indian), OpenEMR)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: unable to send message to renderer
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-81ARGGN&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\JiDi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.sg.base.WebDriverWrapper.setUp(WebDriverWrapper.java:35)
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialTest(physician, physician, English (Indian), OpenEMR)">
+                  </a> <!-- validCredentialTest(physician, physician, English (Indian), OpenEMR) -->
+                  <span class="method-name">validCredentialTest</span>
+                  <span class="parameters">(physician, physician, English (Indian), OpenEMR)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialTest(admin, pass, English (Indian), OpenEMR)">
+                  </a> <!-- validCredentialTest(admin, pass, English (Indian), OpenEMR) -->
+                  <span class="method-name">validCredentialTest</span>
+                  <span class="parameters">(admin, pass, English (Indian), OpenEMR)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialTest(accountant, accountant, English (Indian), OpenEMR)">
+                  </a> <!-- validCredentialTest(accountant, accountant, English (Indian), OpenEMR) -->
+                  <span class="method-name">validCredentialTest</span>
+                  <span class="parameters">(accountant, accountant, English (Indian), OpenEMR)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialTest(physician, physician, English (Indian), OpenEMR)">
+                  </a> <!-- validCredentialTest(physician, physician, English (Indian), OpenEMR) -->
+                  <span class="method-name">validCredentialTest</span>
+                  <span class="parameters">(physician, physician, English (Indian), OpenEMR)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [OpenEMR] but found [CloudEMR]
+	at com.sg.test.LoginTest.validCredentialTest(LoginTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OpenEMR_Suite-class-skipped -->
+          </div> <!-- suite-OpenEMR_Suite-class-failed -->
+          <div class="suite-OpenEMR_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sg.test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(bala, bala123, Dutch, Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(bala, bala123, Dutch, Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(admin123, bala, English (Indian), Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(john, john123, Dutch, Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(john, john123, Dutch, Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(bala, bala123, Dutch, Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(bala, bala123, Dutch, Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(admin123, bala, English (Indian), Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialTest(john, john123, Dutch, Invalid username or password)">
+                  </a> <!-- invalidCredentialTest(john, john123, Dutch, Invalid username or password) -->
+                  <span class="method-name">invalidCredentialTest</span>
+                  <span class="parameters">(john, john123, Dutch, Invalid username or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OpenEMR_Suite-class-passed -->
         </div> <!-- panel OpenEMR_Suite -->
         <div panel-name="test-xml-OpenEMR_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -324,11 +335,18 @@ Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;OpenEMR Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;ff&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test - ch&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ch&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.sg.test.LoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;/test&gt; &lt;!-- Login Test - ch --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test - ff&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sg.test.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test - ff --&gt;
 &lt;/suite&gt; &lt;!-- OpenEMR Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -340,7 +358,10 @@ Session ID: d206991ab2b5dc3d19cb3b5ae58d4c50
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (1 class)</span>
+                <span class="test-name">Login Test - ch (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Test - ff (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -366,36 +387,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidCredentialTest')
+data.setCell(0, 1, 'validCredentialTest')
 data.setCell(0, 2, 'com.sg.test.LoginTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 4636);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validCredentialTest')
 data.setCell(1, 2, 'com.sg.test.LoginTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 4478);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidCredentialTest')
+data.setCell(2, 1, 'validCredentialTest')
 data.setCell(2, 2, 'com.sg.test.LoginTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 4307);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validCredentialTest')
 data.setCell(3, 2, 'com.sg.test.LoginTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 4032);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidCredentialTest')
+data.setCell(4, 1, 'validCredentialTest')
 data.setCell(4, 2, 'com.sg.test.LoginTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 4021);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'validCredentialTest')
 data.setCell(5, 2, 'com.sg.test.LoginTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 4021);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidCredentialTest')
+data.setCell(6, 2, 'com.sg.test.LoginTest')
+data.setCell(6, 3, 3305);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidCredentialTest')
+data.setCell(7, 2, 'com.sg.test.LoginTest')
+data.setCell(7, 3, 2161);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidCredentialTest')
+data.setCell(8, 2, 'com.sg.test.LoginTest')
+data.setCell(8, 3, 1695);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'invalidCredentialTest')
+data.setCell(9, 2, 'com.sg.test.LoginTest')
+data.setCell(9, 3, 1631);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidCredentialTest')
+data.setCell(10, 2, 'com.sg.test.LoginTest')
+data.setCell(10, 3, 1607);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'invalidCredentialTest')
+data.setCell(11, 2, 'com.sg.test.LoginTest')
+data.setCell(11, 3, 1463);
 window.suiteTableData['OpenEMR_Suite']= { tableData: data, tableDiv: 'times-div-OpenEMR_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-OpenEMR_Suite">
               </div> <!-- times-div-OpenEMR_Suite -->
             </div> <!-- times-div -->
@@ -423,78 +468,160 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.sg.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(ch)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)</span>
-                <span class="method-start">3513 ms</span>
+                <span class="method-start">25652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3531 ms</span>
+                <span class="method-start">27366 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3538 ms</span>
+                <span class="method-name">setUp(ch)</span>
+                <span class="method-start">28313 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidCredentialTest(john, john123, Dutch, Invalid username or password)</span>
-                <span class="method-start">3540 ms</span>
+                <span class="method-start">36681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3553 ms</span>
+                <span class="method-start">38843 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3555 ms</span>
+                <span class="method-name">setUp(ch)</span>
+                <span class="method-start">39634 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)</span>
-                <span class="method-start">3557 ms</span>
+                <span class="method-start">47808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3567 ms</span>
+                <span class="method-start">49419 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3584 ms</span>
+                <span class="method-name">setUp(ch)</span>
+                <span class="method-start">50214 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validCredentialTest(admin, pass, English (Indian), OpenEMR)</span>
-                <span class="method-start">3603 ms</span>
+                <span class="method-start">58605 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3613 ms</span>
+                <span class="method-start">63088 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3623 ms</span>
+                <span class="method-name">setUp(ch)</span>
+                <span class="method-start">65352 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validCredentialTest(physician, physician, English (Indian), OpenEMR)</span>
-                <span class="method-start">3627 ms</span>
+                <span class="method-start">76300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3642 ms</span>
+                <span class="method-start">80608 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3644 ms</span>
+                <span class="method-name">setUp(ch)</span>
+                <span class="method-start">81402 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validCredentialTest(accountant, accountant, English (Indian), OpenEMR)</span>
-                <span class="method-start">3645 ms</span>
+                <span class="method-start">90812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3655 ms</span>
+                <span class="method-start">94835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">102221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialTest(admin123, bala, English (Indian), Invalid username or password)</span>
+                <span class="method-start">166262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">169568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">171662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialTest(john, john123, Dutch, Invalid username or password)</span>
+                <span class="method-start">189036 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">192019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialTest(bala, bala123, Dutch, Invalid username or password)</span>
+                <span class="method-start">202951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">204584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">206155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCredentialTest(admin, pass, English (Indian), OpenEMR)</span>
+                <span class="method-start">215294 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">219932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">221287 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCredentialTest(physician, physician, English (Indian), OpenEMR)</span>
+                <span class="method-start">231082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">235104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(ff)</span>
+                <span class="method-start">236562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCredentialTest(accountant, accountant, English (Indian), OpenEMR)</span>
+                <span class="method-start">247411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">251445 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
