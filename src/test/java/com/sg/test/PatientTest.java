@@ -4,16 +4,17 @@ import org.testng.annotations.Test;
 
 import com.sg.base.WebDriverWrapper;
 import com.sg.pages.LoginPage;
+import com.sg.utilities.DataProviderUtils;
 
 public class PatientTest extends WebDriverWrapper {	
 
-	@Test
-	public void addPatientTest()
+	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "commonDataProvider")
+	public void addPatientTest(String username,String password,String language,String firstname,String lastname,String dob,String gender,String expectedAlert,String expectedPatientName)
 	{
 		LoginPage login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("pass");
-		login.selectLanguageByText("English (Indian)");
+		login.enterUsername(username);
+		login.enterPassword(password);
+		login.selectLanguageByText(language);
 		login.clickOnLogin();
 		
 		//mouseover on patient/
