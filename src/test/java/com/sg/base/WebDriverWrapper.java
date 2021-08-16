@@ -29,7 +29,7 @@ public class WebDriverWrapper {
 
 	@BeforeSuite
 	public void start() {
-		if(extent != null)
+		if(extent == null)
 		{
 			extent = new ExtentReports();
 			ExtentSparkReporter htmlReporter = new ExtentSparkReporter("src/test/resources/report/testReport.html");
