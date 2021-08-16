@@ -3,6 +3,7 @@ package com.sg.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.sg.base.WebDriverWrapper;
 import com.sg.pages.DashboardPage;
 import com.sg.pages.LoginPage;
@@ -30,9 +31,13 @@ public class LoginTest extends WebDriverWrapper {
 	{
 		LoginPage login=new LoginPage(driver);
 		login.enterUsername(username);
+		test.log(Status.INFO, "Entered username as "+username);
 		login.enterPassword(password);
+		test.log(Status.INFO, "Entered password as "+password);
 		login.selectLanguageByText(language);
+		test.log(Status.INFO, "Selected language as "+language);
 		login.clickOnLogin();
+		test.log(Status.INFO, "Clicked on login");
 		
 		Assert.assertEquals(login.getInvalidLoginErrorMessage(), expectedValue);
 	}
