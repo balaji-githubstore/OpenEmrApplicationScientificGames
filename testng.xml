@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="OpenEMR Suite" parallel="tests">
+<suite name="OpenEMR Suite" thread-count="2" parallel="tests">
 
 	<parameter name="browser" value="ff"></parameter>
 
-	<test thread-count="5" name="Login Test - ch">
+	<test name="Login Test - ch">
 		<parameter name="browser" value="ch"></parameter>
 		<classes>
-			<class name="com.sg.test.LoginTest" />
+			<class name="com.sg.test.LoginTest" >
+			<methods>
+				<include name=".*CredentialTest"></include>
+			</methods>
+			
+			</class>
 		</classes>
 	</test> <!-- Test -->
 
-	<test thread-count="5" name="Login Test - ff">
-		<classes>
-			<class name="com.sg.test.LoginTest" />
-		</classes>
-	</test> <!-- Test -->
 
 </suite> <!-- Suite -->

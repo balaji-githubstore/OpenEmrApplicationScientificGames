@@ -11,6 +11,10 @@ import com.sg.utilities.DataProviderUtils;
 
 public class LoginTest extends WebDriverWrapper {
 	
+	public void applicationTitleTest() {
+		Assert.assertEquals(driver.getTitle(), "cloudEMR");
+	}
+	
 	@Test(dataProviderClass = DataProviderUtils.class,dataProvider = "validCredentialData")
 	public void validCredentialTest(String username,String password,String language,String expectedValue) {
 

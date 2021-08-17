@@ -13,6 +13,7 @@ public class LoginPage {
 	private By loginLocator = By.xpath("//button[@type='submit']");
 	private By ackLicCertiLocator = By.partialLinkText("Acknowledgments");
 	private By appDescriptionLocator = By.xpath("//p[contains(text(),'most')]");
+	private By errorLocator=By.xpath("//div[contains(text(),'Invalid')]");
 
 	private WebDriver driver;
 
@@ -47,6 +48,6 @@ public class LoginPage {
 	}
 
 	public String getInvalidLoginErrorMessage() {
-		return driver.findElement(By.xpath("//div[contains(text(),'Invalid')]")).getText().trim();
+		return driver.findElement(errorLocator).getText().trim();
 	}
 }
