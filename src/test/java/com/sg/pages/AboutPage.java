@@ -8,6 +8,7 @@ public class AboutPage {
 	private String mscFrameName = "msc";
 	private By headerLocator = By.tagName("h1");
 	private By versionLocator = By.tagName("h4");
+	private String monthXpath="//span[contains(text(),'MONTH')]";
 
 	private WebDriver driver;
 
@@ -24,6 +25,9 @@ public class AboutPage {
 	}
 
 	public String getVersion() {
+		
+		//monthXpath=monthXpath.replace("MONTH","");
+		
 		return driver.findElement(versionLocator).getText().trim();
 	}
 	

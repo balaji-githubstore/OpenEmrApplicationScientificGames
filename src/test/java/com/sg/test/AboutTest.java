@@ -33,7 +33,6 @@ public class AboutTest extends WebDriverWrapper {
 		
 		Assert.assertTrue(actualVersion.contains(expectedVersion));
 	}
-
 }
 
 
