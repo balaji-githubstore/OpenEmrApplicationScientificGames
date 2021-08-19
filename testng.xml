@@ -9,7 +9,7 @@
 		<classes>
 			<class name="com.sg.test.LoginTest" >
 			<methods>
-				<include name=".*CredentialTest"></include>
+				<include name="invalidCredentialTest"></include>
 			</methods>
 			
 			</class>
